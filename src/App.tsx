@@ -44,16 +44,24 @@ function App() {
   const allPages: number = Math.ceil(totalCount / count);
 
   console.log(data);
-  const handleShowMore = () => setPage((prevState) => prevState + 1);
+
+  const handleNextPage = () =>
+    setPage((prevState) => (prevState < allPages ? prevState + 1 : allPages));
+
+  const handlePrevPage = () =>
+    setPage((prevState) => (prevState > 1 ? prevState - 1 : 1));
+
   const handleCount = (e: ChangeEvent<HTMLSelectElement>) =>
     setCount(Number(e.target.value));
 
   return (
     <main>
       <h1>Posts</h1>
+
       <span>
         Page: {page} / {allPages}
       </span>
+
       <div className={"page-count"}>
         <p>Posts per Page:</p>
         <select onChange={handleCount} value={count}>
@@ -62,14 +70,19 @@ function App() {
           ))}
         </select>
       </div>
+
       <ul>
         {allPosts.map(({ id, title }) => (
           <li key={id}>{`${id} - ${title}`}</li>
         ))}
       </ul>
 
-      <button onClick={handleShowMore} disabled={page >= allPages}>
-        {totalCount >= allPages ? "Show More" : "End Posts"}
+      <button onClick={handleNextPage} disabled={page >= allPages}>
+        Next Page
+      </button>
+
+      <button onClick={handlePrevPage} disabled={page <= 1}>
+        Prev Page
       </button>
     </main>
   );
