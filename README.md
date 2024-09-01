@@ -1,13 +1,18 @@
 # Apollo Client + React Demo App
 
-This is a simple React application that fetches a list of posts using Apollo Client and displays them with pagination. The app fetches data from a GraphQL endpoint and dynamically loads more posts when the "Show More" button is clicked.
+This simple React application fetches a list of posts using Apollo Client and displays them with pagination. The app fetches data from a GraphQL endpoint and dynamically loads more posts when clicking the Next & Prev buttons.
 
-**Note**: Use VPN or Proxy for fetching data.
+**Note**: Use VPN or Proxy to fetch data.
+
+
+# View Online
+
+[View Online App](https://fariidlotfi.github.io/graphql-fetch-data-app/)
 
 ## Features
 
 - Fetch posts from a GraphQL API using Apollo Client.
-- Paginate the posts, loading more posts when the user clicks the "Show More" button.
+- Paginate the posts, loading more posts when the user clicks the buttons.
 - Handle loading and error states.
 - Display the total number of posts available and disable the button when no more posts can be loaded.
 
@@ -23,7 +28,7 @@ This is a simple React application that fetches a list of posts using Apollo Cli
 
 To run this project, you will need to have the following installed on your machine:
 
-- **Node.js**: v12.x or higher
+- **Node.js**: v18.x or higher
 - **npm** or **yarn**
 
 ### Installation
