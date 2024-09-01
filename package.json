@@ -1,6 +1,5 @@
 {
   "name": "graphql-fetch-data-app",
-  "homepage": "https://fariidlotfi.github.io/graphql-fetch-data-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
