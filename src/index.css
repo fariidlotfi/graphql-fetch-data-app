@@ -7,6 +7,9 @@
 body {
   display: grid;
   place-content: center;
+  background: #2b2163;
+  color: ghostwhite;
+  min-height: 100svh;
 }
 
 main {
