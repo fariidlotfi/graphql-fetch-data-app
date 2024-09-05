@@ -9,6 +9,8 @@ This simple React application fetches a list of posts using Apollo Client and di
 
 [View Online App](https://fariidlotfi.github.io/graphql-fetch-data-app/)
 
+![screenshot-graphql](https://github.com/user-attachments/assets/03cd05f6-eb1f-471a-ab74-9de9e47ff3e2)
+
 ## Features
 
 - Fetch posts from a GraphQL API using Apollo Client.
